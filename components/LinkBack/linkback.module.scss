@@ -1,0 +1,9 @@
+.linkBack:visited,
+.linkBack:link {
+    color: var(--color-grey);
+    font-size: 1.8rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

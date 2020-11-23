@@ -1,0 +1,40 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    min-width: 40vw;
+    font-size: 1.8rem;
+    padding: 5rem;
+    padding-top: 2.5rem;
+    border: 2px solid var(--color-grey);
+    position: relative;
+}
+
+.characteristics {
+    list-style: circle;
+
+    & li:not(:last-child) {
+        margin-bottom: 0.4rem;
+    }
+}
+
+.header {
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+.linkBack {
+    position: absolute;
+    color: black;
+    margin-right: auto;
+    right: 8%;
+}
+
+.description {
+    color: var(--color-grey);
+    padding-top: 0.5rem;
+}

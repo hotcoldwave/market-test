@@ -1,0 +1,74 @@
+{
+    "phones": [
+        {
+            "model": "Xiaomi Redmi 9A",
+            "description": "Телефон на Android 10 с поддержкой двух SIM-карт",
+            "characteristics": {
+                "color": "синий",
+                "display": 6.53,
+                "memory": 32,
+                "price": 7860
+            }
+        },
+        {
+            "model": "Xiaomi Redmi Note 8 Pro",
+            "description": "Телефон на Android 9 с качественной камерой",
+            "characteristics": {
+                "color": "серый",
+                "display": 6.53,
+                "memory": 64,
+                "price": 17990
+            }
+        },
+        {
+            "model": "Apple iPhone 6S",
+            "description": "Популярная модель Iphone на IOS 9",
+            "characteristics": {
+                "color": "серый",
+                "display": 4.7,
+                "memory": 128,
+                "price": 20990
+            }
+        },
+        {
+            "model": "Huawei HONOR 8A Prime",
+            "description": "Телефон на платформе Android с поддержкой двух SIM-карт",
+            "characteristics": {
+                "color": "зелёный",
+                "display": 6.09,
+                "memory": 64,
+                "price": 9410
+            }
+        },
+        {
+            "model": "Samsung Galaxy A71",
+            "description": "Современная модель Samsung на Android 10",
+            "characteristics": {
+                "color": "серый",
+                "display": 6.7,
+                "memory": 128,
+                "price": 29890
+            }
+        },
+        {
+            "model": "Apple iPhone 11",
+            "description": "Актуальная модель Iphone прошлого года",
+            "characteristics": {
+                "color": "фиолетовый",
+                "display": 6.1,
+                "memory": 64,
+                "price": 54889
+            }
+        },
+        {
+            "model": "Apple iPhone 15",
+            "description": "Модель Iphone из будущего",
+            "characteristics": {
+                "color": "фиолетовый",
+                "display": 6.1,
+                "memory": 64,
+                "price": 200000
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+.card {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid grey;
+    flex: 1 1 40%;
+
+    &:nth-of-type(even) {
+        margin-left: 2rem;
+    }
+}
+
+.description {
+    margin-top: 1.3rem;
+    max-width: 75%;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.price {
+    letter-spacing: 0.5px;
+    padding: 0 0.5rem 0 1rem;
+}
+
+.link:visited,
+.link:link {
+    color: var(--color-black);
+    font-size: 2rem;
+    font-weight: bold;
+
+    &:hover {
+        color: var(--color-grey);
+        cursor: pointer;
+    }
+}

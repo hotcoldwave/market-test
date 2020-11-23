@@ -1,0 +1,27 @@
+{
+    "name": "market-test",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.10.15",
+        "next": "10.0.2",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "react-hook-form": "^6.11.5",
+        "sass": "^1.29.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    },
+    "description": "Market for e-commerce",
+    "main": "index.js",
+    "author": "Egor Kukobin",
+    "license": "MIT"
+}
