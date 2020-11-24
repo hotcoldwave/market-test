@@ -1,4 +1,7 @@
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
     font-size: 1.8rem;
     padding: 1.5rem;
     margin-bottom: 2rem;
@@ -7,6 +10,13 @@
 
     &:nth-of-type(even) {
         margin-left: 2rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+        flex: 1 0 100%;
+        &:nth-of-type(even) {
+            margin-left: 0;
+        }
     }
 }
 
@@ -18,12 +28,16 @@
 .cardHeader {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .price {
     letter-spacing: 0.5px;
-    padding: 0 0.5rem 0 1rem;
+    padding-right: 0.5rem;
+    @media only screen and (max-width: 700px) {
+        min-width: 100%;
+    }
 }
 
 .link:visited,
@@ -31,6 +45,7 @@
     color: var(--color-black);
     font-size: 2rem;
     font-weight: bold;
+    flex-shrink: 1;
 
     &:hover {
         color: var(--color-grey);

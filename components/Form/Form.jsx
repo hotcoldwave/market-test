@@ -57,6 +57,7 @@ export default function Form(props) {
                                 <span>Память, Гб</span>
                                 <input
                                     type="number"
+                                    min="0"
                                     name="memory"
                                     className={styles.inputField}
                                     ref={register}
@@ -67,6 +68,7 @@ export default function Form(props) {
                                 <span>Экран″</span>
                                 <input
                                     type="number"
+                                    min="0"
                                     name="display"
                                     className={styles.inputField}
                                     ref={register}
@@ -74,9 +76,10 @@ export default function Form(props) {
                                 />
                             </label>
                             <label>
-                                <span>Цена (₽)</span>
+                                <span>Цена, ₽</span>
                                 <input
                                     type="number"
+                                    min="0"
                                     name="price"
                                     className={styles.inputField}
                                     ref={register}
