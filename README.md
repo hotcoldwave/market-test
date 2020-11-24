@@ -4,9 +4,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 1. First, run mongo:
 
-docker pull mongo
+```docker pull mongo (if not installed latest version)
 
 docker run -d -p 27017:27017 --name mongodb mongo:latest
+```
 
 2. Second, run the development server:
 
