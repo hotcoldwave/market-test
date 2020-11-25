@@ -1,17 +1,8 @@
 import styles from './form.module.scss';
 import LinkBack from '../LinkBack/LinkBack';
-import React, { useEffect } from 'react';
-import { useRouter } from 'next/router';
 
 export default function Form(props) {
     const { onSubmit, isSubmitting, register } = props;
-    const router = useRouter();
-
-    useEffect(() => {
-        if (isSubmitting) {
-            router.push('/');
-        }
-    }, [isSubmitting]);
 
     return (
         <>
@@ -95,6 +86,7 @@ export default function Form(props) {
                         <input
                             type="submit"
                             value="Добавить товар"
+                            disabled={isSubmitting}
                             className={styles.submitButton}
                         />
                     </section>

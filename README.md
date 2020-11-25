@@ -1,17 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Add phones into your e-commerce site and then find some you needed.
 
-## Getting Started
+## How to run locally
 
-1. First, run mongo:
+First, install and run latest image of mongoDb
 
-```docker pull mongo (if not installed latest version)
-
+```
+docker pull mongo
 docker run -d -p 27017:27017 --name mongodb mongo:latest
 ```
 
-2. Second, run the development server:
+Second, install dependencies
 
-```bash
+```
+yarn install
+# or
+npm install
+```
+
+And run the development server:
+
+```
 npm run dev
 # or
 yarn dev

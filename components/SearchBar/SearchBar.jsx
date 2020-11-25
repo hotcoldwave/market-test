@@ -1,5 +1,4 @@
 import styles from './searchBar.module.scss';
-import React from 'react';
 
 export default function SearchBar(props) {
     const { onSubmit, register } = props;
@@ -21,6 +20,7 @@ export default function SearchBar(props) {
                 <input
                     type="number"
                     min="0"
+                    max="300000"
                     name="minPrice"
                     placeholder="0 ₽"
                     className={styles.filterInput}
@@ -30,6 +30,7 @@ export default function SearchBar(props) {
                 <input
                     type="number"
                     min="0"
+                    max="300000"
                     name="maxPrice"
                     placeholder="10000 ₽"
                     className={styles.filterInput}

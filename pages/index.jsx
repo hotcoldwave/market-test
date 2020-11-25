@@ -8,15 +8,14 @@ import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
 
 export default function Devices({ data }) {
-    const { register, handleSubmit } = useForm();
+    const { handleSubmit, register } = useForm();
+
     const router = useRouter();
     let [formData, setFormData] = useState(null);
     const onSubmit = (data) => setFormData(data);
 
     useEffect(() => {
-        if (formData) {
-            router.push({ pathname: '/', query: { ...formData } }, undefined, { shallow: true });
-        }
+        router.push({ pathname: '/', query: { ...formData } });
     }, [formData]);
 
     return (
@@ -33,13 +32,13 @@ export default function Devices({ data }) {
 }
 
 export async function getServerSideProps(ctx) {
-    console.log(ctx.query);
-    let response;
-    if (ctx.query) {
-        response = await fetch(`http://localhost:3000/api`);
-    } else {
-        response = await fetch('http://localhost:3000/api/');
+    const url = new URL('http://localhost:3000/api');
+
+    for (let prop in ctx.query) {
+        url.searchParams.append(prop, ctx.query[prop]);
     }
+
+    let response = await fetch(url);
     const { data } = await response.json();
     return { props: { data } };
 }
