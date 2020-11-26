@@ -14,4 +14,10 @@ And run in another shell:
 yarn && yarn dev
 ```
 
+To stop docker-compose with MongoDB:
+
+```
+docker-compose stop && docker-compose down
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
