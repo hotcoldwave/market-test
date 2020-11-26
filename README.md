@@ -2,27 +2,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## How to run locally
 
-First, install and run latest image of mongoDb
+First run:
 
 ```
-docker pull mongo
-docker run -d -p 27017:27017 --name mongodb mongo:latest
+docker-compose up
 ```
 
-Second, install dependencies
+And run in another shell:
 
 ```
-yarn install
-# or
-npm install
-```
-
-And run the development server:
-
-```
-npm run dev
-# or
-yarn dev
+yarn && yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
