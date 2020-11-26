@@ -5,10 +5,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First run:
 
 ```
-docker-compose up
+docker-compose up -d
 ```
 
-And run in another shell:
+And run project build in dev mode:
 
 ```
 yarn && yarn dev
